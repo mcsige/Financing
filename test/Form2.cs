@@ -29,5 +29,9 @@ namespace test
         {
             parent.Enabled = true;
         }
+		void Button1Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
     }
 }

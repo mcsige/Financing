@@ -41,6 +41,7 @@
         	this.tabPage2 = new System.Windows.Forms.TabPage();
         	this.button2 = new System.Windows.Forms.Button();
         	this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+        	this.label3 = new System.Windows.Forms.Label();
         	this.tabControl1.SuspendLayout();
         	this.tabPage1.SuspendLayout();
         	this.groupBox1.SuspendLayout();
@@ -52,22 +53,24 @@
         	this.tabControl1.Controls.Add(this.tabPage1);
         	this.tabControl1.Controls.Add(this.tabPage2);
         	this.tabControl1.Location = new System.Drawing.Point(16, 15);
-        	this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+        	this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
         	this.tabControl1.Name = "tabControl1";
         	this.tabControl1.SelectedIndex = 0;
         	this.tabControl1.Size = new System.Drawing.Size(365, 298);
         	this.tabControl1.TabIndex = 0;
+        	this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.TabControl1SelectedIndexChanged);
         	// 
         	// tabPage1
         	// 
+        	this.tabPage1.Controls.Add(this.label3);
         	this.tabPage1.Controls.Add(this.button1);
         	this.tabPage1.Controls.Add(this.groupBox1);
         	this.tabPage1.Controls.Add(this.textBox1);
         	this.tabPage1.Controls.Add(this.label1);
         	this.tabPage1.Location = new System.Drawing.Point(4, 25);
-        	this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+        	this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
         	this.tabPage1.Name = "tabPage1";
-        	this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+        	this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
         	this.tabPage1.Size = new System.Drawing.Size(357, 269);
         	this.tabPage1.TabIndex = 0;
         	this.tabPage1.Text = "收支项目信息";
@@ -76,7 +79,7 @@
         	// button1
         	// 
         	this.button1.Location = new System.Drawing.Point(113, 210);
-        	this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+        	this.button1.Margin = new System.Windows.Forms.Padding(4);
         	this.button1.Name = "button1";
         	this.button1.Size = new System.Drawing.Size(100, 29);
         	this.button1.TabIndex = 3;
@@ -91,9 +94,9 @@
         	this.groupBox1.Controls.Add(this.radioButton2);
         	this.groupBox1.Controls.Add(this.radioButton1);
         	this.groupBox1.Location = new System.Drawing.Point(31, 78);
-        	this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+        	this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
         	this.groupBox1.Name = "groupBox1";
-        	this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+        	this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
         	this.groupBox1.Size = new System.Drawing.Size(267, 125);
         	this.groupBox1.TabIndex = 2;
         	this.groupBox1.TabStop = false;
@@ -103,7 +106,7 @@
         	// 
         	this.comboBox1.FormattingEnabled = true;
         	this.comboBox1.Location = new System.Drawing.Point(81, 79);
-        	this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+        	this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
         	this.comboBox1.Name = "comboBox1";
         	this.comboBox1.Size = new System.Drawing.Size(160, 23);
         	this.comboBox1.TabIndex = 5;
@@ -123,7 +126,7 @@
         	// 
         	this.radioButton2.AutoSize = true;
         	this.radioButton2.Location = new System.Drawing.Point(145, 39);
-        	this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+        	this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
         	this.radioButton2.Name = "radioButton2";
         	this.radioButton2.Size = new System.Drawing.Size(58, 19);
         	this.radioButton2.TabIndex = 1;
@@ -135,7 +138,7 @@
         	this.radioButton1.AutoSize = true;
         	this.radioButton1.Checked = true;
         	this.radioButton1.Location = new System.Drawing.Point(21, 39);
-        	this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+        	this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
         	this.radioButton1.Name = "radioButton1";
         	this.radioButton1.Size = new System.Drawing.Size(58, 19);
         	this.radioButton1.TabIndex = 0;
@@ -146,7 +149,7 @@
         	// textBox1
         	// 
         	this.textBox1.Location = new System.Drawing.Point(140, 28);
-        	this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+        	this.textBox1.Margin = new System.Windows.Forms.Padding(4);
         	this.textBox1.Name = "textBox1";
         	this.textBox1.Size = new System.Drawing.Size(132, 25);
         	this.textBox1.TabIndex = 1;
@@ -166,9 +169,9 @@
         	this.tabPage2.Controls.Add(this.button2);
         	this.tabPage2.Controls.Add(this.richTextBox1);
         	this.tabPage2.Location = new System.Drawing.Point(4, 25);
-        	this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+        	this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
         	this.tabPage2.Name = "tabPage2";
-        	this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+        	this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
         	this.tabPage2.Size = new System.Drawing.Size(357, 269);
         	this.tabPage2.TabIndex = 1;
         	this.tabPage2.Text = "确认信息";
@@ -177,7 +180,7 @@
         	// button2
         	// 
         	this.button2.Location = new System.Drawing.Point(128, 210);
-        	this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+        	this.button2.Margin = new System.Windows.Forms.Padding(4);
         	this.button2.Name = "button2";
         	this.button2.Size = new System.Drawing.Size(100, 29);
         	this.button2.TabIndex = 1;
@@ -188,12 +191,23 @@
         	// richTextBox1
         	// 
         	this.richTextBox1.Location = new System.Drawing.Point(33, 24);
-        	this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+        	this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
         	this.richTextBox1.Name = "richTextBox1";
         	this.richTextBox1.ReadOnly = true;
         	this.richTextBox1.Size = new System.Drawing.Size(288, 178);
         	this.richTextBox1.TabIndex = 0;
         	this.richTextBox1.Text = "";
+        	// 
+        	// label3
+        	// 
+        	this.label3.AutoSize = true;
+        	this.label3.ForeColor = System.Drawing.Color.Red;
+        	this.label3.Location = new System.Drawing.Point(140, 57);
+        	this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+        	this.label3.Name = "label3";
+        	this.label3.Size = new System.Drawing.Size(67, 15);
+        	this.label3.TabIndex = 4;
+        	this.label3.Text = "添加成功";
         	// 
         	// Form3
         	// 
@@ -201,7 +215,7 @@
         	this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         	this.ClientSize = new System.Drawing.Size(397, 328);
         	this.Controls.Add(this.tabControl1);
-        	this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+        	this.Margin = new System.Windows.Forms.Padding(4);
         	this.Name = "Form3";
         	this.Text = "添加收支项目";
         	this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form3_FormClosing);
@@ -230,5 +244,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label3;
     }
 }
