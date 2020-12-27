@@ -73,7 +73,7 @@
         	// 
         	this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
         	this.退出ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-        	this.退出ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+        	this.退出ToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
         	this.退出ToolStripMenuItem.Text = "退出";
         	this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
         	// 
@@ -100,6 +100,7 @@
         	this.统计查询ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
         	this.统计查询ToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
         	this.统计查询ToolStripMenuItem.Text = "统计查询";
+        	this.统计查询ToolStripMenuItem.Click += new System.EventHandler(this.统计查询ToolStripMenuItemClick);
         	// 
         	// 基本资料ToolStripMenuItem
         	// 
@@ -137,7 +138,7 @@
         	// 
         	this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
         	this.关于ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-        	this.关于ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+        	this.关于ToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
         	this.关于ToolStripMenuItem.Text = "关于";
         	this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
         	// 
@@ -176,7 +177,7 @@
         	this.Controls.Add(this.menuStrip1);
         	this.IsMdiContainer = true;
         	this.MainMenuStrip = this.menuStrip1;
-        	this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+        	this.Margin = new System.Windows.Forms.Padding(4);
         	this.Name = "Form4";
         	this.Text = "个人理财";
         	this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form4_FormClosing);

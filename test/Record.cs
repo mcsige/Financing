@@ -15,8 +15,74 @@ namespace test
 	/// </summary>
 	public class Record
 	{
-		public Record()
+		private int iid;
+		private DateTime date;
+		private string explain;
+		private int pkind;
+		private int money;
+		private string remarks;
+		public Record(int iid,DateTime date,string explain,int pkind,int money,string remarks)
 		{
+			this.iid = iid;
+			this.date = date;
+			this.explain = explain;
+			this.pkind = pkind;
+			this.money = money;
+			this.remarks = remarks;
+		}
+
+		public int Iid {
+			get {
+				return iid;
+			}
+			set {
+				iid = value;
+			}
+		}
+
+		public DateTime Date {
+			get {
+				return date;
+			}
+			set {
+				date = value;
+			}
+		}
+
+		public string Explain {
+			get {
+				return explain;
+			}
+			set {
+				explain = value;
+			}
+		}
+
+		public int Pkind {
+			get {
+				return pkind;
+			}
+			set {
+				pkind = value;
+			}
+		}
+
+		public int Money {
+			get {
+				return money;
+			}
+			set {
+				money = value;
+			}
+		}
+
+		public string Remarks {
+			get {
+				return remarks;
+			}
+			set {
+				remarks = value;
+			}
 		}
 	}
 }

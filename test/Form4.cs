@@ -55,5 +55,11 @@ namespace test
             form5.Show();
             this.Enabled = false;
         }
+		private void 统计查询ToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Form6 form6 = new Form6(this);
+            form6.Show();
+            this.Enabled = false;
+		}
     }
 }

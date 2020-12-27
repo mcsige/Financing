@@ -9,6 +9,7 @@
 using System;
 using System.Collections.Generic;
 using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace test
 {
@@ -55,6 +56,16 @@ namespace test
 			MySqlCommand cmd = new MySqlCommand(sql, conn);//sqlcommand表示要向向数据库执行sql语句或存储过程
 			cmd.ExecuteNonQuery();
             conn.Close();
+		}
+		
+		public DataTable onRecordQuery(params MySqlParameter[] parameters){
+			string sql = "SELECT * FROM frecord";
+			conn.Open();
+			MySqlDataAdapter adapter = new MySqlDataAdapter(sql, conn);
+			DataSet records = new DataSet();
+			adapter.Fill(records, "records");
+			conn.Close();
+			return records.Tables[0];
 		}
 	}
 }
